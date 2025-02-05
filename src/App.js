@@ -1,7 +1,8 @@
 import './App.css';
 import MenuItem from './components/MenuItem';
 
-// import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
+
+import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
 
 // Menu data. An array of objects where each object represents a menu item. Each menu item has an id, title, description, image name, and price.
 // You can use the image name to get the image from the images folder.
@@ -82,10 +83,40 @@ const menuItems = [
 function App() {
   return (
     <div>
-      <h1>Menu</h1>
-      <div className="menu">
-        {/* Display menu items dynamicaly here by iterating over the provided menuItems */}
-        <MenuItem title={menuItems[0].title} /> {/* Example for how to use a component */}
+      {/* Title Section */}
+      <div className="title">
+        <div className="container">
+          <div className="row">
+            <div className="col-2 col-sm-5 col-md-5 text-end">
+              <img src="/images/food_logo.jpg" alt="Logo" style={{ width: "60px" }} />
+            </div>
+            <div className="col-10 col-sm-7 col-md-7 text-start">
+              <h1 className="name">CAMPUS CAFE</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* Motto Section */}
+      <div className="motto text-center">
+        <h4 className="description">Delicious, From-Scratch Recipes Close at Hand</h4>
+        <h2 className="slogan">The Fresh Choice of UT!</h2>
+      </div>
+
+      {/* Menu Section */}
+      <div className="container mt-4">
+        <div className="temp">
+          {menuItems.map((item) => (
+            <MenuItem 
+              key={item.id} 
+              title={item.title} 
+              description={item.description} 
+              imageName={item.imageName}
+              price={item.price} 
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
