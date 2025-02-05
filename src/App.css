@@ -19,8 +19,8 @@
   align-items: end;
 }
 
-.desciption {
-  font-size: 15px;
+.description {
+  font-size: 17px;
   font-family: "Lucida Handwriting", cursive;
   color:chocolate 
 }
@@ -39,18 +39,18 @@
 .item-name {
   font-family: "Arial", sans-serif;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .item-description {
   font-family: "Arial", sans-serif;
   font-weight: lighter;
-  font-size: 13.5px;
+  font-size: 15.5px;
 }
 
 .item-price {
   font-family: "Arial", sans-serif;
-  font-size: 13.5px;
+  font-size: 15.5px;
 }
 
 .button {
