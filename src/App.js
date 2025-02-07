@@ -88,7 +88,7 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-2 col-sm-5 col-md-5 text-end">
-              <img src="/images/food_logo.jpg" alt="Logo" style={{ width: "60px" }} />
+              <img src="images/food_logo.jpg" alt="Logo" style={{ width: "60px" }} />
             </div>
             <div className="col-10 col-sm-7 col-md-7 text-start">
               <h1 className="name">CAMPUS CAFE</h1>
